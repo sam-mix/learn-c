@@ -32,7 +32,7 @@
 
 int main(void) {
 	float a, b;
-	a = 2.0e20 + 1.0;
+	b = 2.0e20 + 1.0;
 	a = b - 2.0e20;
 	printf("%f\n", a);
 	return 0;
