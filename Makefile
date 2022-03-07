@@ -8,5 +8,5 @@ make: clean
 	@./a.out
 
 .PHONY: all
-all: clean
+all: clean make
 
