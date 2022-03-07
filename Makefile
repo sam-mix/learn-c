@@ -6,7 +6,7 @@ clean:
 make: clean
 	@mkdir -p ./bin
 	@cc -o ./bin/a.out hello.c
-	@./a.out
+	@cd ./bin && ./a.out
 
 .PHONY: all
 all: clean make
