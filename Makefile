@@ -4,6 +4,7 @@ clean:
 
 .PHONY: make
 make: clean
+	@mkdir -p ./bin
 	@cc -o ./bin/a.out hello.c
 	@./a.out
 
