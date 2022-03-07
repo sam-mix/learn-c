@@ -4,7 +4,8 @@ clean:
 
 .PHONY: make
 make: clean
-	@cc -o /bin/a.out hello.c
+	@cc -o ./bin/a.out hello.c
+	@./a.out
 
 .PHONY: all
 all: clean
