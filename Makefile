@@ -1,6 +1,6 @@
 .PHONY: all clean make 
 
-all: clean build clean
+all: clean build
 
 clean:
 	@clear

@@ -39,11 +39,26 @@
 // }
 
 
-/* sizeof */
+// /* sizeof */
+// #include <stdio.h>
+
+// int main() {
+// 	int x[10];
+// 	printf("%d\n", sizeof(x));
+// 	return 0;
+// }
+
+
 #include <stdio.h>
 
 int main() {
-	int x[10];
-	printf("%d\n", sizeof(x));
+
+	char *src = "hello";
+	char *dst;
+	strcpy(dst,src);
+	printf("%s\n", dst);
+
+
 	return 0;
 }
+
