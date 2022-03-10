@@ -3,6 +3,7 @@
 all: clean build
 
 clean:
+	@clear
 	@rm -rf bin
 
 build: 
