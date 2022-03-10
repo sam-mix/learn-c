@@ -1,13 +1,18 @@
-.PHONY: clean
+.PHONY: clean make all
+
 clean:
 	@rm -rf bin
 
-.PHONY: make
-make: clean
+make: 
 	@mkdir -p ./bin
 	@cc -o ./bin/a.out hello.c
 	@cd ./bin && ./a.out
+	@git add .
+	@git commit -m "x"
+	@git push
 
-.PHONY: all
 all: clean make
+
+
+
 
