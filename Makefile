@@ -1,4 +1,6 @@
-.PHONY: clean make all
+.PHONY: all clean make 
+
+all: clean build
 
 clean:
 	@rm -rf bin
@@ -10,8 +12,3 @@ build:
 	@git add .
 	@git commit -m "x"
 	@git push
-
-all: clean build
-
-
-
