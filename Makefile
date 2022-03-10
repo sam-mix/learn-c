@@ -3,7 +3,7 @@
 clean:
 	@rm -rf bin
 
-make: 
+build: 
 	@mkdir -p ./bin
 	@cc -o ./bin/a.out hello.c
 	@cd ./bin && ./a.out
@@ -11,8 +11,7 @@ make:
 	@git commit -m "x"
 	@git push
 
-all: clean make
-
+all: clean build
 
 
 
